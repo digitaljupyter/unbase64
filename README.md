@@ -2,7 +2,18 @@
 
 A quick utility to convert a string (or *strings*) to UTF-8 from base64.
 
-Install (requires MESON & NINJA INSTALLED):
+## Developer Dependencies
+
+unbase64 requires `meson` installed, if you don't have it, get it!
+
+```sh
+# for arch (using paru)
+paru -S meson
+```
+
+If you'd like to contribute other distros, you are welcome to do so!
+
+## Installation
 
 ```
 git clone https://github.com/thekaigonzalez/unbase64.git
