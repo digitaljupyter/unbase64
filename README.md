@@ -7,5 +7,5 @@ Install (requires MESON & NINJA INSTALLED):
 ```
 git clone https://github.com/thekaigonzalez/unbase64.git
 cd unbase64
-meson build && cd build && ninja Install
+meson build && cd build && ninja install
 ```
