@@ -29,6 +29,8 @@ int main(string[] args) {
     if (arg == "--help" || arg == "-h") {
       return print_usage_and_exit();
     } else {
+      if (arg[0] == '-') print_usage_and_exit(true);
+
       conv_queue ~= arg;
     }
   }
