@@ -23,4 +23,6 @@ meson build && cd build && ninja install
 
 ## Fish
 
-If you're using the fish shell, then you are able to use the fish completions (installed by default, so even if you don't, whenever you install it you'll have them)
+If you're using the fish shell, then you are able to use the fish 
+completions (installed by default, so even if you don't, 
+whenever you install it you'll have them)
