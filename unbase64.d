@@ -19,6 +19,7 @@ int print_usage_and_exit(bool error = false) {
       <decoded str1>
       <decoded str2>
     ");
+  if (error == true) return 1;
   return 0;
 }
 
