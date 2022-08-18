@@ -20,3 +20,7 @@ git clone https://github.com/thekaigonzalez/unbase64.git
 cd unbase64
 meson build && cd build && ninja install
 ```
+
+## Fish
+
+If you're using the fish shell, then you are able to use the fish completions (installed by default, so even if you don't, whenever you install it you'll have them)
