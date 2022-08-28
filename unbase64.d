@@ -39,7 +39,7 @@ int main(string[] args) {
 
   if (conv_queue.length == 0) {
     try {
-      writeln(cast(string)Base64.decode(readln()));
+      writeln(cast(string)Base64.decode(readln().strip));
     } catch (Base64Exception e) {
       writeln("unbase64: error: " ~ e.msg);
     }
