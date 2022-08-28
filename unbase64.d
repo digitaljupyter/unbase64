@@ -7,6 +7,8 @@ int print_usage_and_exit(bool error = false) {
   writeln("
       usage: unbase64 [string ...] [--help|-h]\n");
   writeln("
+      If NO [STRING] specified, will read from STDIN.
+
       UNBASE64 is a program which is basically the equivalent to 'base64 -d'.
       It decodes base64-encoded strings and prints them.
 
@@ -29,9 +31,17 @@ int main(string[] args) {
     if (arg == "--help" || arg == "-h") {
       return print_usage_and_exit();
     } else {
-      if (arg[0] == '-') print_usage_and_exit(true);
+      if (arg[0] == '-') auto _=print_usage_and_exit(true);
 
       conv_queue ~= arg;
+    }
+  }
+
+  if (conv_queue.length == 0) {
+    try {
+      writeln(cast(string)Base64.decode(stdin.readln()));
+    } catch (Base64Exception e) {
+      writeln("unbase64: error: " ~ e.msg);
     }
   }
   foreach (string str ; conv_queue) {
