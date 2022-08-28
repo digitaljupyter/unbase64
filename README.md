@@ -9,6 +9,10 @@ unbase64 requires `meson` installed, if you don't have it, get it!
 ```sh
 # for arch (using paru)
 paru -S meson
+
+# for openSUSE
+opi meson
+zypper in meson
 ```
 
 If you'd like to contribute other distros, you are welcome to do so!
