@@ -13,6 +13,10 @@ paru -S meson
 # for openSUSE
 opi meson
 zypper in meson
+
+# for Windows
+pip install meson
+#(download ninja.exe, add to your path, then install.)
 ```
 
 If you'd like to contribute other distros, you are welcome to do so!
